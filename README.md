@@ -1,6 +1,6 @@
-# ProcessWire2.7 ProcessSwitchUser
+#ProcessWire ProcessSwitchUser
 
- This module allows the default admin - and other users you specify - to login as any other user as defined in the module config. This could be useful for reproducing errors your users can see on websites or during testing, but I would suggest it is used wisely as there are some obvious snooping abilities in using this.
+This module allows the default admin - and other users you specify - to login as any other user as defined in the module config. This could be useful for reproducing errors your users can see on websites or during testing, but I would suggest it is used wisely as there are some obvious snooping abilities in using this.
 
 Once installed, you can configure the module to be usable by various members of staff other than the default admin account, as well as define which roles or individual users you will be able to login as.
 
