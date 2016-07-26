@@ -1,0 +1,14 @@
+{
+    "title": "Switch User Account",
+    "version": "0.0.6",
+    "summary": "Allows specific users to login as any other user account",
+    "author": "Peter Burlingham",
+    "href": "",
+    "autoload": "admin",
+    "singular": false,
+    "permanent": false,
+    "requires": [
+        "PHP>=5.3.0",
+        "ProcessWire>=2.6.8"
+    ]
+}
