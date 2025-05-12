@@ -40,7 +40,7 @@ class ProcessSwitchUser extends Process implements Module, ConfigurableModule {
 
 	public function ___execute() {
 		// Are we allowed to use this module?
-		if (!in_array($this->user->id, $this->who_can_use)) {
+		if (!in_array($this->user->id, $this->who_can_use ?? [])) {
 			$this->error(__('You do not have permission to switch user accounts'));
 			$this->session->redirect($this->pages->get(2)->url);
 		}
@@ -101,7 +101,7 @@ class ProcessSwitchUser extends Process implements Module, ConfigurableModule {
 
 	public function checkPermission($event) {
 		$page = $event->object;
-		if ($page->process == 'ProcessSwitchUser' && !$this->user->matches('id=' . implode('|', $this->who_can_use))) {
+		if ($page->process == 'ProcessSwitchUser' && !$this->user->matches('id=' . implode('|', $this->who_can_use ?? []))) {
 			$event->return = false;
 		}
 	}
